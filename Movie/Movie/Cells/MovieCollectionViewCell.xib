@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="MovieCollectionViewCell" id="gTV-IL-0wX" customClass="MovieCollectionViewCell" customModule="Movie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="186" height="339"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="186" height="339"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="ivu-H8-g2T">
+                        <rect key="frame" x="0.0" y="0.0" width="186" height="250"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="250" id="74o-sv-J8r"/>
+                            <constraint firstAttribute="width" constant="186" id="a7X-mS-3Wv"/>
+                        </constraints>
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="OR2-Z0-AWJ">
+                        <rect key="frame" x="15" y="266" width="50" height="14"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9e-M7-PFi">
+                                <rect key="frame" x="0.0" y="0.0" width="0.33333333333333331" height="14"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Vector"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7s-84-dTq">
+                                <rect key="frame" x="12.333333333333332" y="0.0" width="0.33333333333333393" height="14"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Vector"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLK-e9-03F">
+                                <rect key="frame" x="24.666666666666664" y="0.0" width="0.66666666666666785" height="14"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Vector"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCx-WX-GHw">
+                                <rect key="frame" x="37.333333333333336" y="0.0" width="0.3333333333333357" height="14"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Vector"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5s-Cn-DrP">
+                                <rect key="frame" x="49.666666666666671" y="0.0" width="0.3333333333333357" height="14"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Vector"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="0DH-JB-73A"/>
+                            <constraint firstAttribute="width" constant="50" id="Ctj-Xz-BWC"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="UXc-x0-gez"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="14" id="WSv-KF-4UO"/>
+                        </constraints>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Wick 3 " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Btt-O1-qak">
+                        <rect key="frame" x="10" y="288" width="166" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="2iJ-Po-4lO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action | Fiction" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLv-eD-8gb">
+                        <rect key="frame" x="10" y="314" width="89" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="11" id="Mnm-xI-rNS"/>
+                            <constraint firstAttribute="width" constant="89" id="eVq-sd-Tn9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22 Jun 2022" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIZ-k2-9X6">
+                        <rect key="frame" x="107" y="314" width="72" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="72" id="1iq-Yk-CEq"/>
+                            <constraint firstAttribute="height" constant="11" id="Ou8-Hq-tPd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="zLv-eD-8gb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="0Nk-qy-Cvp"/>
+                <constraint firstItem="Btt-O1-qak" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="3TW-sJ-IOo"/>
+                <constraint firstItem="zLv-eD-8gb" firstAttribute="top" secondItem="Btt-O1-qak" secondAttribute="bottom" constant="8" id="6PS-Qc-ASc"/>
+                <constraint firstItem="ivu-H8-g2T" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="CPQ-pa-sVZ"/>
+                <constraint firstItem="ivu-H8-g2T" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="IlA-WF-xHS"/>
+                <constraint firstAttribute="trailing" secondItem="Btt-O1-qak" secondAttribute="trailing" constant="10" id="PCX-vt-YTa"/>
+                <constraint firstItem="uIZ-k2-9X6" firstAttribute="top" secondItem="ivu-H8-g2T" secondAttribute="bottom" constant="64" id="TEX-Yu-Psq"/>
+                <constraint firstItem="OR2-Z0-AWJ" firstAttribute="top" secondItem="ivu-H8-g2T" secondAttribute="bottom" constant="16" id="TNc-gJ-7CL"/>
+                <constraint firstAttribute="trailing" secondItem="ivu-H8-g2T" secondAttribute="trailing" id="WbP-5Z-1Cx"/>
+                <constraint firstItem="uIZ-k2-9X6" firstAttribute="leading" secondItem="zLv-eD-8gb" secondAttribute="trailing" constant="8" id="a9d-Lh-chU"/>
+                <constraint firstItem="Btt-O1-qak" firstAttribute="top" secondItem="OR2-Z0-AWJ" secondAttribute="bottom" constant="8" id="bzH-hC-OgF"/>
+                <constraint firstItem="OR2-Z0-AWJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="sSX-RZ-7Tq"/>
+            </constraints>
+            <size key="customSize" width="370" height="443"/>
+            <connections>
+                <outlet property="dateMovie" destination="uIZ-k2-9X6" id="lcB-kw-z2F"/>
+                <outlet property="movieImageView" destination="ivu-H8-g2T" id="z8O-bc-W1W"/>
+                <outlet property="movieType" destination="zLv-eD-8gb" id="jTU-6e-52K"/>
+                <outlet property="nameMovieLabel" destination="Btt-O1-qak" id="Sak-3z-wYk"/>
+            </connections>
+            <point key="canvasLocation" x="380" y="159.59715639810426"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Vector" width="14" height="13"/>
+        <image name="image" width="164" height="250"/>
+    </resources>
+</document>
